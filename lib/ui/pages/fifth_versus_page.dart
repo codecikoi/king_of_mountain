@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:king_of_mountain/ui/pages/second_versus_page.dart';
 import 'package:king_of_mountain/ui/widgets/action_button.dart';
 import 'package:king_of_mountain/ui/widgets/avenger_Info.dart';
 import 'package:king_of_mountain/ui/widgets/versus_back_gradient.dart';
 import '../../utilities/avengers_images.dart';
+import 'final_result_page.dart';
 
-class FirstVsPage extends StatelessWidget {
-  const FirstVsPage({Key? key}) : super(key: key);
+class FifthVsPage extends StatelessWidget {
+  const FifthVsPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +24,8 @@ class FirstVsPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       AvengerInfo(
-                        name: 'Batman',
-                        imagePath: AvengersImages.batman,
+                        name: 'Thanos',
+                        imagePath: AvengersImages.thanos,
                       ),
                       Text(
                         'vs'.toUpperCase(),
@@ -35,8 +35,8 @@ class FirstVsPage extends StatelessWidget {
                         ),
                       ),
                       AvengerInfo(
-                        name: 'Black Panther',
-                        imagePath: AvengersImages.blackPanther,
+                        name: 'Thor',
+                        imagePath: AvengersImages.thor,
                       ),
                     ],
                   ),
@@ -46,11 +46,11 @@ class FirstVsPage extends StatelessWidget {
             SizedBox(height: 20),
             ActionButton(
               onTap: () {
-                print('tapped 1');
+                print('tapped 5');
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => SecondVsPage(),
+                    builder: (context) => FinalResultPage(),
                   ),
                 );
               },

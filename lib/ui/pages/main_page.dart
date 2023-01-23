@@ -15,7 +15,7 @@ class MainPage extends StatelessWidget {
           title: Text(
             'king of mountain'.toUpperCase(),
             style: TextStyle(
-              fontWeight: FontWeight.w900,
+              fontWeight: FontWeight.w700,
               fontSize: 30,
               color: AvengersColors.textColor,
             ),
@@ -44,12 +44,12 @@ class MainPage extends StatelessWidget {
               child: Text(
                 'start'.toUpperCase(),
                 style: TextStyle(
-                  fontWeight: FontWeight.w900,
+                  fontWeight: FontWeight.w500,
                   fontSize: 20,
                   color: AvengersColors.textColor,
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
