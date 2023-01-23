@@ -6,4 +6,5 @@ class AvengersColors {
   static const background = Colors.white10;
   static const textColor = Colors.black;
   static const greyButtonColor = Colors.black12;
+  static const exitButtonColor = Colors.red;
 }

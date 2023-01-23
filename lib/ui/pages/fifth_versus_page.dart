@@ -4,7 +4,7 @@ import 'package:king_of_mountain/ui/widgets/avenger_Info.dart';
 import 'package:king_of_mountain/ui/widgets/versus_back_gradient.dart';
 import '../../utilities/avengers_colors.dart';
 import '../../utilities/avengers_images.dart';
-import 'final_result_page.dart';
+import 'semi_final_page.dart';
 
 class FifthVsPage extends StatelessWidget {
   const FifthVsPage({Key? key}) : super(key: key);
@@ -51,7 +51,7 @@ class FifthVsPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => FinalResultPage(),
+                    builder: (context) => SemiFinalPage(),
                   ),
                 );
               },
