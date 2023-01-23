@@ -4,11 +4,12 @@ import '../../utilities/avengers_colors.dart';
 class ActionButton extends StatelessWidget {
   final VoidCallback onTap;
   final String buttonText;
+  final Color color;
 
   const ActionButton({
     Key? key,
     required this.onTap,
-    required this.buttonText,
+    required this.buttonText, required this.color,
   }) : super(key: key);
 
   @override
@@ -17,7 +18,7 @@ class ActionButton extends StatelessWidget {
       onTap: onTap,
       child: Container(alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: AvengersColors.greyButtonColor,
+          color: color,
           borderRadius: BorderRadius.circular(15.0),
         ),
         height: 40,

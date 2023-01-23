@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 class AvengerInfo extends StatelessWidget {
   final String name;
   final String imagePath;
+  final VoidCallback onTap;
 
   const AvengerInfo({
     Key? key,
     required this.name,
     required this.imagePath,
+    required this.onTap,
   }) : super(key: key);
 
   @override
@@ -22,10 +24,13 @@ class AvengerInfo extends StatelessWidget {
             fontWeight: FontWeight.w700,
           ),
         ),
-        Image.asset(
-          imagePath,
-          width: 100,
-          height: 100,
+        GestureDetector(
+          onTap: onTap,
+          child: Image.asset(
+            imagePath,
+            width: 100,
+            height: 100,
+          ),
         ),
         SizedBox(height: 10),
         Row(

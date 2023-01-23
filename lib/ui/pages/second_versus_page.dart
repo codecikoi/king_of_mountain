@@ -3,6 +3,7 @@ import 'package:king_of_mountain/ui/pages/third_versus_page.dart';
 import 'package:king_of_mountain/ui/widgets/action_button.dart';
 import 'package:king_of_mountain/ui/widgets/avenger_Info.dart';
 import 'package:king_of_mountain/ui/widgets/versus_back_gradient.dart';
+import '../../utilities/avengers_colors.dart';
 import '../../utilities/avengers_images.dart';
 import 'first_versus_page.dart';
 
@@ -27,6 +28,9 @@ class SecondVsPage extends StatelessWidget {
                       AvengerInfo(
                         name: 'Black Widow',
                         imagePath: AvengersImages.blackWidow,
+                        onTap: () {
+                          print('selected');
+                        },
                       ),
                       Text(
                         'vs'.toUpperCase(),
@@ -38,6 +42,9 @@ class SecondVsPage extends StatelessWidget {
                       AvengerInfo(
                         name: 'Captain America',
                         imagePath: AvengersImages.captainAmerica,
+                        onTap: () {
+                          print('selected');
+                        },
                       ),
                     ],
                   ),
@@ -56,6 +63,7 @@ class SecondVsPage extends StatelessWidget {
                 );
               },
               buttonText: 'next versus',
+              color: AvengersColors.greyButtonColor,
             ),
           ],
         ),

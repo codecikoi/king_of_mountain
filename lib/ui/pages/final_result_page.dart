@@ -37,11 +37,17 @@ class FinalResultPage extends StatelessWidget {
                           AvengerInfo(
                             name: 'Thor',
                             imagePath: AvengersImages.thor,
+                            onTap: () {
+                              print('selected');
+                            },
                           ),
                           SizedBox(height: 20),
                           AvengerInfo(
                             name: 'Hulk',
                             imagePath: AvengersImages.hulk,
+                            onTap: () {
+                              print('selected');
+                            },
                           ),
                         ],
                       ),
@@ -60,11 +66,15 @@ class FinalResultPage extends StatelessWidget {
                           AvengerInfo(
                             name: 'Batman',
                             imagePath: AvengersImages.batman,
+                            onTap: () {},
                           ),
                           SizedBox(height: 20),
                           AvengerInfo(
                             name: 'Spiderman',
                             imagePath: AvengersImages.spiderman,
+                            onTap: () {
+                              print('selected');
+                            },
                           ),
                         ],
                       ),
@@ -85,6 +95,7 @@ class FinalResultPage extends StatelessWidget {
                 );
               },
               buttonText: 'retry',
+              color: AvengersColors.greyButtonColor,
             ),
           ],
         ),

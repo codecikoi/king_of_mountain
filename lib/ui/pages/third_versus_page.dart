@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:king_of_mountain/ui/widgets/action_button.dart';
 import 'package:king_of_mountain/ui/widgets/avenger_Info.dart';
 import 'package:king_of_mountain/ui/widgets/versus_back_gradient.dart';
+import '../../utilities/avengers_colors.dart';
 import '../../utilities/avengers_images.dart';
 import 'fourth_versus_page.dart';
 
@@ -26,6 +27,9 @@ class ThirdVsPage extends StatelessWidget {
                       AvengerInfo(
                         name: 'Groot',
                         imagePath: AvengersImages.groot,
+                        onTap: () {
+                          print('selected');
+                        },
                       ),
                       Text(
                         'vs'.toUpperCase(),
@@ -37,6 +41,9 @@ class ThirdVsPage extends StatelessWidget {
                       AvengerInfo(
                         name: 'Hulk',
                         imagePath: AvengersImages.hulk,
+                        onTap: () {
+                          print('selected');
+                        },
                       ),
                     ],
                   ),
@@ -55,6 +62,7 @@ class ThirdVsPage extends StatelessWidget {
                 );
               },
               buttonText: 'next versus',
+              color: AvengersColors.greyButtonColor,
             ),
           ],
         ),

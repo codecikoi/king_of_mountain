@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:king_of_mountain/ui/widgets/action_button.dart';
 import 'package:king_of_mountain/ui/widgets/avenger_Info.dart';
 import 'package:king_of_mountain/ui/widgets/versus_back_gradient.dart';
+import '../../utilities/avengers_colors.dart';
 import '../../utilities/avengers_images.dart';
 import 'final_result_page.dart';
 
@@ -25,7 +26,7 @@ class FifthVsPage extends StatelessWidget {
                     children: [
                       AvengerInfo(
                         name: 'Thanos',
-                        imagePath: AvengersImages.thanos,
+                        imagePath: AvengersImages.thanos, onTap: () {  },
                       ),
                       Text(
                         'vs'.toUpperCase(),
@@ -36,7 +37,7 @@ class FifthVsPage extends StatelessWidget {
                       ),
                       AvengerInfo(
                         name: 'Thor',
-                        imagePath: AvengersImages.thor,
+                        imagePath: AvengersImages.thor, onTap: () {  },
                       ),
                     ],
                   ),
@@ -55,6 +56,7 @@ class FifthVsPage extends StatelessWidget {
                 );
               },
               buttonText: 'next versus',
+              color: AvengersColors.greyButtonColor,
             ),
           ],
         ),
